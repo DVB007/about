@@ -39,10 +39,12 @@
     };
   </script>
   <body class="bg-gray-100 dark:bg-gray-900">
+    <!-- Header Position -->
+    <div id="navbar-container"></div>
     <main>
       <!-- Hero / Intro Section -->
       <section
-        class="flex flex-col items-center justify-center w-full bg-[url('./picture/image.jpg')] bg-cover h-[700px] text-gray-50 text-center gap-4 shadow-2xl"
+        class="flex flex-col items-center justify-center w-full bg-[url('../img/image.jpg')] bg-cover h-[700px] text-gray-50 text-center gap-4 shadow-2xl"
       >
         <h1 class="text-5xl font-bold font-primary mb-[30px]">
           About LibreShelf
@@ -97,9 +99,9 @@
               >
                 <img
                   class="w-[200px] h-[250px] rounded-[10px]"
-                  src="./picture/cher1.jpg"
+                  src="../img/cher1.jpg"
                 />
-                <div class="pl-[50px]">
+                <div class="sm:pl-[50px]">
                   <h3 class="text-primary font-bold text-[24px]">Teacher</h3>
                   <h3 class="text-blue-400 font-bold text-[24px]">
                     Eung Lyzhia
@@ -122,13 +124,13 @@
               </article>
               <article
                 data-aos="flip-left"
-                class="sm:flex block  justify-center items-center border-2 hover:border-primary dark:hover:border-white bg-gray-100 hover:bg-blue-200 dark:bg-secondary rounded-[20px] p-4 shadow-2xl"
+                class="sm:flex block justify-center items-center border-2 hover:border-primary dark:hover:border-white bg-gray-100 hover:bg-blue-200 dark:bg-secondary rounded-[20px] p-4 shadow-2xl"
               >
                 <img
                   class="w-[200px] h-[250px] rounded-[10px]"
-                  src="./picture/cherKeo.jpg"
+                  src="../img/cherKeo.jpg"
                 />
-                <div class="pl-[50px]">
+                <div class="sm:pl-[50px]">
                   <h3 class="text-primary font-bold text-[24px]">Teacher</h3>
                   <h3 class="text-blue-400 font-bold text-[24px]">Kay Keo</h3>
                   <p
@@ -169,10 +171,12 @@
               <article>
                 <img
                   class="w-[200px] h-[200px] rounded-[100%] pb-4"
-                  src="./picture/1.jpg"
+                  src="../img/1.jpg"
                   alt="#"
                 />
-                <h3 class="font-bold text-primary dark:text-primary text-lg text-[18px]">
+                <h3
+                  class="font-bold text-primary dark:text-primary text-lg text-[18px]"
+                >
                   Meng Kimleab
                 </h3>
                 <p
@@ -200,7 +204,7 @@
               <article>
                 <img
                   class="w-[200px] h-[200px] rounded-[100%] pb-4"
-                  src="./picture/2.jpg"
+                  src="../img/2.jpg"
                   alt="#"
                 />
                 <h3 class="font-bold text-primary text-lg text-[18px]">
@@ -231,7 +235,7 @@
               <article>
                 <img
                   class="w-[200px] h-[200px] rounded-[100%] pb-4"
-                  src="./picture/3.jpg"
+                  src="../img/3.jpg"
                   alt="#"
                 />
                 <h3 class="font-bold text-primary text-lg text-[18px]">
@@ -259,7 +263,7 @@
               class="hidden md:grid lg:col-start-2 lg:row-start-2 lg:col-span-2 lg:row-span-2 md:col-start-2 md:row-start-2 rounded-2xl"
             >
               <article>
-                <img src="./picture/Libreshelf.png" alt="#" />
+                <img src="../img/Libreshelf.png" alt="#" />
               </article>
             </div>
             <!-- piture 4 -->
@@ -270,7 +274,7 @@
               <article>
                 <img
                   class="w-[200px] h-[200px] rounded-[100%] pb-4"
-                  src="./picture/4.jpg"
+                  src="../img/4.jpg"
                   alt="#"
                 />
                 <h3 class="font-bold dark:text-primary text-lg text-[18px]">
@@ -301,7 +305,7 @@
               <article>
                 <img
                   class="w-[200px] h-[200px] rounded-[100%] pb-4"
-                  src="./picture/5.jpg"
+                  src="../img/5.jpg"
                   alt="#"
                 />
                 <h3 class="font-bold dark:text-primary text-lg text-[18px]">
@@ -332,7 +336,7 @@
               <article>
                 <img
                   class="w-[200px] h-[200px] rounded-[100%] pb-4"
-                  src="./picture/6.jpg"
+                  src="../img/6.jpg"
                   alt="#"
                 />
                 <h3 class="font-bold dark:text-primary text-lg text-[18px]">
@@ -363,7 +367,7 @@
               <article>
                 <img
                   class="w-[200px] h-[200px] rounded-[100%] pb-4"
-                  src="./picture/7.jpg"
+                  src="../img/7.jpg"
                   alt="#"
                 />
                 <h3 class="font-bold dark:text-primary text-lg text-[18px]">
@@ -394,7 +398,7 @@
               <article>
                 <img
                   class="w-[200px] h-[200px] rounded-[100%] pb-4"
-                  src="./picture/8.jpg"
+                  src="../img/8.jpg"
                   alt="#"
                 />
                 <h3 class="font-bold dark:text-primary text-lg text-[18px]">
@@ -430,5 +434,22 @@
         </section>
       </div>
     </main>
+    <!-- Footer Position -->
+    <div id="footer"></div>
+
+    <!-- Import footer.js -->
+    <script src="/js/footer.js"></script>
+
+    <!-- Call function -->
+    <script>
+      renderFooter("footer");
+    </script>
+    <!-- Import navbar.js -->
+    <script src="../js/navbar.js"></script>
+
+    <!-- Call function -->
+    <script>
+      renderNavbar("navbar-container", "about"); // Use "about" for active link
+    </script>
   </body>
 </html>
